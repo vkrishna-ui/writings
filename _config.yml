@@ -1,0 +1,13 @@
+# Site Settings
+title: My GitHub Pages Site
+description: Writings on topics of interest to me.
+avatar: /assets/images/avatar.jpg # Optional: Path to your profile picture
+
+# Build Settings
+theme: jekyll-theme-minimal
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
