@@ -38,6 +38,8 @@ by minimizing an expected loss \( E[L(X,\theta)] \) with the expectation taken o
 $$ 
 \theta(t+1) = \theta(t) − \eta_{t}\nabla_{\theta}E[L(X,\theta)]
 $$
+
+
 Here the expectation value of the loss is approximated by the empirical mean loss over the set of training 
 samples. In SGD, the expectation value is replaced by a mean over a small, randomly chosen subset of samples, 
 or even a single sample.
