@@ -1,0 +1,16 @@
+{{ if .Params.mathjax | default .Site.Params.enableMathJax }}
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://jsdelivr.net"></script>
+{{ end }}
+

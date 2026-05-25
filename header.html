@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <!-- Link to your style.css asset -->
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+    <!-- Load the MathJax partial script -->
+    {{ partial "mathjax.html" . }}
+</head>
+<body>
+<header>
+    <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+</header>
+
