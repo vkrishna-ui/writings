@@ -28,8 +28,8 @@ Robbins and Monro (Annals of Statistics 1951) first introduced SGD, wherein inst
 gradient for a loss estimated over the entire training set, one estimates gradients for a randomly 
 chosen subset of training samples.
 
-In mathematical terms, let $ \theta $ be a set of parameters of a ML model that we want to optimize, 
-by minimizing an expected loss \( E[L(X,\theta)] \) with the expectation taken over the distribution of 
+In mathematical terms, let $$ \theta $$ be a set of parameters of a ML model that we want to optimize, 
+by minimizing an expected loss $$ \( E[L(X,\theta)] \) $$ with the expectation taken over the distribution of 
 (training) samples. In traditional gradient descent we update the parameters using the rule:
 
 $$ 
