@@ -1,13 +1,10 @@
 +++
 date = '2026-05-25T00:55:26-04:00'
 draft = true
-title = 'Quantum Math'
+title = 'Stochastic gradient descent and Diffusion models'
 mathjax: true
 +++
-### Inline Equations
-Stochastic gradient descent and Diffusion
-May 25, 2026
-SGD as an early diffusion model
+### SGD as an early diffusion model
 Generative diffusion models aim to reconstruct an underlying probability distribution from a given 
 set of samples/observations (this is a bit crude in description, as diffusion models actually 
 approximate a score function, partly because estimating partition functions is hard). They 
@@ -31,7 +28,7 @@ Robbins and Monro (Annals of Statistics 1951) first introduced SGD, wherein inst
 gradient for a loss estimated over the entire training set, one estimates gradients for a randomly 
 chosen subset of training samples.
 
-In mathematical terms, let \( \theta \) be a set of parameters of a ML model that we want to optimize, 
+In mathematical terms, let $ \theta $ be a set of parameters of a ML model that we want to optimize, 
 by minimizing an expected loss \( E[L(X,\theta)] \) with the expectation taken over the distribution of 
 (training) samples. In traditional gradient descent we update the parameters using the rule:
 
